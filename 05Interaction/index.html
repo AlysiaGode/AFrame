@@ -13,6 +13,7 @@
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
+          <img id="grass" src="images/rainbow.jpg" />
       </a-assets>
 
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
@@ -32,9 +33,9 @@
           startEvents: mouseenter; 
           dur: 500;"
         animation__mouseleave="
-          property: components.material.material.color; 
-          type: color; 
-          to: red; 
+          property: material.material; 
+          type: src; 
+          to: #rainbow; 
           startEvents: mouseleave; 
           dur: 500;">  
       </a-box>
