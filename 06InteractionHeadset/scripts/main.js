@@ -1,6 +1,8 @@
 
 var rotationSpeed = 0.001;
 var myOtherBox = document.getElementById('myOtherBox');
+var myBox = document.getElementById('myBox');
+var cursorRing = document.getElementById('cursorRing');
 
 function spin(){
 	myOtherBox.object3D.rotation.x += rotationSpeed;
@@ -31,13 +33,14 @@ myOtherBox.addEventListener('mouseleave', function(){
 var growspeed = 1.2;
 
 function colorChange(){
-	myOtherBox.object3D.color = "green";
+	myBox.object3D.material.color = "green";
+	cursorRing.material.color = "yellow";
 }
 
 function grow(){
-	myOtherBox.object3D.scale.x *= growspeed;
-	myOtherBox.object3D.scale.y *= growspeed;
-	myOtherBox.object3D.scale.z *= growspeed;
+	myOtherBox.object3D.scale.x /= growspeed;
+	myOtherBox.object3D.scale.y /= growspeed;
+	myOtherBox.object3D.scale.z /= growspeed;
 	//console.log(myOtherBox.object3D.scale);
 }
 
