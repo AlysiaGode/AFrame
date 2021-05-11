@@ -43,6 +43,6 @@ function grow(){
 
 myOtherBox.addEventListener('click', function(){ // uses a fuse
 	grow();
-	// colorChange();
+	colorChange();
 	console.log('grew + color');
 });
