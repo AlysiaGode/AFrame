@@ -23,7 +23,14 @@
           position="0 0 -1"
           radius-inner= "0.02"
           radius-outer= "0.03"
-          material="color: lightblue; shader: flat">
+          material="color: lightblue; shader: flat"
+          animation="property: components.material.material.color; 
+                   type: color; 
+                   from: lightblue;
+                   to: blue; 
+                   dur: 2000; 
+                   easing: linear; 
+                   loop: true" > >
         </a-ring>
       </a-camera>
       

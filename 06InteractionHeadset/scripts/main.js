@@ -33,8 +33,8 @@ myOtherBox.addEventListener('mouseleave', function(){
 var growspeed = 1.2;
 
 function colorChange(){
-	myBox.object3D.material.color = "green";
-	cursorRing.material.color = "yellow";
+	myBox.components.material.material.color = "green";
+	cursorRing.components.material.material.color = "yellow";
 }
 
 function grow(){
