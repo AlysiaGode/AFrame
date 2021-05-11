@@ -36,8 +36,10 @@
         depth="1" 
         material="src: #wood2"
         shadow
-         animation="property: material.color; 
-                   to: #f54242 #f5bf42 #cbf542 #48f542 #42f2f5 #4842f5 #d442f5; 
+        animation="property: components.material.material.color; 
+                   type: color; 
+                   from:#42f2f5;
+                   to: #f54242; 
                    dur: 2000; 
                    easing: linear; 
                    loop: true" >  
