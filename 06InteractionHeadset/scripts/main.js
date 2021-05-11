@@ -33,23 +33,25 @@ myOtherBox.addEventListener('mouseleave', function(){
 var growspeed = 2;
 
 
-function grow(){
+function growSmall(){
 	myOtherBox.object3D.scale.x /= growspeed;
 	myOtherBox.object3D.scale.y /= growspeed;
 	myOtherBox.object3D.scale.z /= growspeed;
-
-	myBox.object3D.scale.x *= growspeed;
-	myBox.object3D.scale.y *= growspeed;
-	myBox.object3D.scale.z *= growspeed;
 	//console.log(myOtherBox.object3D.scale);
 }
 
+function growBig(){
+	myBox.object3D.scale.x *= growspeed;
+	myBox.object3D.scale.y *= growspeed;
+	myBox.object3D.scale.z *= growspeed;
+}
+
 myOtherBox.addEventListener('click', function(){ // uses a fuse
-	grow();
-	console.log('grew + color');
+	growSmall();
+	// console.log('grew');
 });
 
 myBox.addEventListener('click', function(){ // uses a fuse
-	grow();
-	console.log('grew + color');
+	growBig();
+	// console.log('grew');
 });
